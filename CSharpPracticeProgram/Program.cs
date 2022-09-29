@@ -3,7 +3,6 @@ using System.Diagnostics.Metrics;
 using System.Threading.Tasks;
 using System;
 using CSharpPracticeProgram;
-using System.Linq.Expressions;
 
 Console.WriteLine("Welcome to your new job!");
 
