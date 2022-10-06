@@ -48,7 +48,7 @@ namespace CSharpPracticeProgram
             return employeeList;
         }
 
-        public static void DisplayEmployees1(List<Employee> employeeList)
+        public static void DisplayEmployees(List<Employee> employeeList)
         {
             foreach (Employee employee in employeeList)
             {
