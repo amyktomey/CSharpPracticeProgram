@@ -13,7 +13,7 @@ Testing does not cover new registrations or profile management.  The assumption 
 USE "PassW0rd" for each of these tests. This will allow ONLY the UserName to be tested.
 
 |Test Case # | Description | Steps | Test Data | Expected Result | Actual Result | Pass/Fail |
-|------|---------------------------|-----------------------------------------------|----------------------|-----------------------|-------------------------|--------|
+|------|--------------------------------------|-----------------------------------------------|----------------------|-----------------------|-------------------------|--------|
 |TID1|UserName already used | Click Login; click register; enter username and password | UserName = OldUser1 | UserName Declined | UserName Declined | Fail |
 |TID2|UserName already used | Click Login; click register; enter username and password | UserName = NewUser1 | UserName Accepted | UserName Accepteed | Pass |
 |TID3|UserName has spaces | Click Login; click register; enter username and password | UserName = No Spaces | UserName Declined | UserName Declined | Fail |
@@ -25,16 +25,14 @@ USE "PassW0rd" for each of these tests. This will allow ONLY the UserName to be 
 *Testing password*
 
 USE "PerfectUserName" for each of these tests. This will allow ONLY the Password to be tested.
-
-|------|---------------------------|-----------------------------------------------|----------------------|-----------------------|-------------------------|--------|
-
+|------|--------------------------------------|-----------------------------------------------|----------------------|-----------------------|-------------------------|--------|
 |TPW1|Password Requires 1 Number |Click Login; click register; enter username and password | Password = PasswordOne |Password Declined | Password Declined | Fail |
 |TPW2|Password Requires 1 Number | Click Login; click register; enter username and password | Passworde =Password1 | Password Accepted | Password Accepteed | Pass |
-|TPW1|Password Requires 1 Capital Letter |Click Login; click register; enter username and password | Password = password1 |Password Declined | Password Declined | Fail |
-|TPW2|Password Requires 1 Capital Letter | Click Login; click register; enter username and password | Password = Password1 | Password Accepted | Password Accepteed | Pass |
+|TPW3|Password Requires 1 Capital Letter |Click Login; click register; enter username and password | Password = password1 |Password Declined | Password Declined | Fail |
+|TPW4|Password Requires 1 Capital Letter | Click Login; click register; enter username and password | Password = Password1 | Password Accepted | Password Accepteed | Pass |
 |TPW3|Password has spaces |Click Login; click register; enter username and password | Password =Pass word1 | Password Declined | Password Declined | Fail |
-|TPW4|Password has no spaces |Click Login; click register; enter username and password |Password= Password1 | Password Accepted | Password Accepted | Pass |
-|TPW5|Password length => 8 & =< 15| Click Login; click register; enter username and password | Password = Tosh0rt | Password Declined | Password Declined | Fail |
-|TPW6|Password length => 8 & =< 15| Click Login; click register; enter username and password | Password = ThisPasswordIstGreaterThan20 |Passworde Declined | Password Declined | Fail |
-|TPW7|Password length => 8 & =< 15| Click Login; click register; enter username and password | Password = PassW0rd |Password Accepted | Password Accepted | Pass |
+|TPW5|Password has no spaces |Click Login; click register; enter username and password |Password= Password1 | Password Accepted | Password Accepted | Pass |
+|TPW6|Password length => 8 & =< 15| Click Login; click register; enter username and password | Password = Tosh0rt | Password Declined | Password Declined | Fail |
+|TPW7|Password length => 8 & =< 15| Click Login; click register; enter username and password | Password = ThisPasswordIstGreaterThan20 |Passworde Declined | Password Declined | Fail |
+|TPW8|Password length => 8 & =< 15| Click Login; click register; enter username and password | Password = PassW0rd |Password Accepted | Password Accepted | Pass |
 
