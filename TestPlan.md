@@ -2,11 +2,11 @@
 
 Test plan for https://demoqa.com/books.
 
-Demoqa has requested a new login process that improves secutiry and privacy for registered customers.  Testing covers setting up and/or retrieveing online ID's and passwords.
+Demoqa has requested a new login process that improves secutiry and privacy for registered customers.  Testing covers setting up online ID's and passwords.
 UserNames cannot have spaces, and must be 6 and 20 characters long.
 Passwords must be 8 and 15 characters long.  Passwords are required to have as least 1 number, one capital letter, and no spaces.
 
-Testing does not cover new registrations or profile management.  The assumption is that users have already registered as customerss, and there are no duplicate customers in the database.
+Testing does not cover:  UnserName or password recovery;  new registrations; profile management.  The assumption is that users have already registered as customerss, and there are no duplicate registrations in the database.
 
 *Testing the UserName*
 
