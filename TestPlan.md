@@ -25,6 +25,7 @@ USE "PassW0rd" for each of these tests. This will allow ONLY the UserName to be 
 *Testing password*
 
 USE "PerfectUserName" for each of these tests. This will allow ONLY the Password to be tested.
+
 |------|--------------------------------------|-----------------------------------------------|----------------------|-----------------------|-------------------------|--------|
 |TPW1|Password Requires 1 Number |Click Login; click register; enter username and password | Password = PasswordOne |Password Declined | Password Declined | Fail |
 |TPW2|Password Requires 1 Number | Click Login; click register; enter username and password | Passworde =Password1 | Password Accepted | Password Accepteed | Pass |
