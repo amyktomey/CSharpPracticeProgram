@@ -12,9 +12,9 @@ Console.WriteLine("2: View all current employees");
 Console.WriteLine("3: Remove an employee by name");
 Console.WriteLine("4: Exit");
 
-List<Employee> employees = new List<Employee>();
+List<Employee> employees = new();
 
-var options = new JsonSerializerOptions
+var _ = new JsonSerializerOptions
 {
     PropertyNameCaseInsensitive = true
 };
