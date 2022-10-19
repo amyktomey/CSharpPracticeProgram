@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Amy",
+    "birthday": "1959-02-0",
+    "salary": 35000
+  },
+
+  {
+    "birthday": "1988-03-03",
+    "name": "Liz",
+    "salary": 28000
+  }
+]
+

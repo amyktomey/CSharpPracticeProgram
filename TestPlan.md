@@ -38,3 +38,12 @@ USE "PerfectUserName" for each of these tests. This will allow ONLY the Password
 |TPW7|Password length => 8 & =< 15| Click Login; click register; enter username and password | Password = ThisPasswordIstGreaterThan20 |Passworde Declined | Password Declined | Fail |
 |TPW8|Password length => 8 & =< 15| Click Login; click register; enter username and password | Password = PassW0rd |Password Accepted | Password Accepted | Pass |
 
+Bug Report
+
+Bugs in UserName setup:
+	- When UserNames are set with the same charachers using a mix of uppercase letters, duplicates are not flagged.
+		(Suggested fix: set all UserNames to uppercase so duplicates can be flagged and replaced.)
+	- Special  characters invalidate a username... the only restriction sould be NO spaces.
+
+Bugs in Password setup:
+	- System rejects special characters... it should allow at least 1, but NOT require a special character.

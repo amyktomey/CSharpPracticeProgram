@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using System;
 using CSharpPracticeProgram;
 using System.Linq.Expressions;
+using System.Text.Json;
 
 Console.WriteLine("Welcome to the program. Please choose from the following menu options:");
 Console.WriteLine("1: Add an employee");
@@ -11,7 +12,16 @@ Console.WriteLine("2: View all current employees");
 Console.WriteLine("3: Remove an employee by name");
 Console.WriteLine("4: Exit");
 
-List<Employee> employees = new();
+List<Employee> employees = new List<Employee>();
+
+var options = new JsonSerializerOptions
+{
+    PropertyNameCaseInsensitive = true
+};
+
+var fileText = File.ReadAllText("employees.json");
+var deserialized = JsonSerializer.Deserialize<List<Employee>>(fileText);
+employees.AddRange(deserialized);
 
 string userInput = Console.ReadLine();
 
@@ -39,3 +49,6 @@ while  (userInput != "4")
     userInput = Console.ReadLine();
 
 }
+
+var json = JsonSerializer.Serialize(employees);
+File.WriteAllText("employees.jaon", json);
